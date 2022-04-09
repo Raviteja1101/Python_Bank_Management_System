@@ -12,8 +12,8 @@ _Bank Management System project is a software used to view customers data easily
 ## High-Level Requirements:
 |ID|Description|Status|
 |---|---------|-------|
-|HLR_01|Shall create new account on user input||
-|HLR_02|Should view all accounts||
-|HLR_03|Deposit amount on user input||
-|HLR_04|Withdraw amount on user input||
-|HLR_05|Shall display account balance ||
+|HLR_01|Shall create new account on user input|Pass|
+|HLR_02|Should view all accounts|Pass|
+|HLR_03|Deposit amount on user input|Pass|
+|HLR_04|Withdraw amount on user input|Pass|
+|HLR_05|Shall display account balance |Pass|
