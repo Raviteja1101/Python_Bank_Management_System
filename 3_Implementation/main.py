@@ -2,7 +2,6 @@ import pickle
 import os
 import pathlib
 
-
 class Account:
     AccNo = 0
     name = ''
@@ -67,6 +66,7 @@ def displayAll():
         for item in mylist:
             print(item.accNo, " ", item.name, " ", item.type, " ", item.deposit)
         infile.close()
+
     else:
         print("No records to display")
 
@@ -82,6 +82,7 @@ def displaySp(num):
             if item.accNo == num:
                 print("Your account Balance is = ", item.deposit)
                 found = True
+
     else:
         print("No records found to Search")
     if not found:
@@ -107,6 +108,7 @@ def depositAndWithdraw(num1, num2):
                         item.deposit -= amount
                     else:
                         print("You cannot withdraw larger amount")
+
 
     else:
         print("No records to Search")
@@ -160,6 +162,7 @@ def writeAccountsFile(account):
         oldlist.append(account)
         infile.close()
         os.remove('accounts.data')
+
     else:
         oldlist = [account]
     outfile = open('newaccounts.data', 'wb')
@@ -168,10 +171,8 @@ def writeAccountsFile(account):
     os.rename('newaccounts.data', 'accounts.data')
 
 
-
 ch = ''
 num = 0
-
 
 while ch != 8:
     # system will display this menu
@@ -186,6 +187,7 @@ while ch != 8:
     print("\t8. EXIT")
     print("\tSelect Your Choice (1-8) ")
     ch = input()
+
 
     if ch == '1':
         writeAccount()
@@ -213,5 +215,3 @@ while ch != 8:
         print("Invalid choice")
 
     ch = input("Enter your choice : ")
-
-
